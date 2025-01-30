@@ -9,7 +9,7 @@ class Preview(BaseMessage):
 
 class Minimap(BaseMessage):
     tile_id: str
-    path: str
+    image: str
 
 
 class Raw(BaseMessage):
