@@ -59,7 +59,7 @@ jobs:
       - name: Dependencies
         run: python3 -m pip install --user pigeon.js
       - name: Build
-        run: python3 -m pigeon_js TEM_comms
+        run: python3 -m pigeon_js .
       - name: Create Release
         env:
           GITHUB_TOKEN: ${{ github.token }}
