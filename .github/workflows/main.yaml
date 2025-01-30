@@ -72,7 +72,7 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "CameronDevine@users.noreply.github.com"
-          git checkout origin/json && git checkout -b json || git switch --orphan json
+          git checkout origin/json && git pull origin json || git switch --orphan json
           git add TEM_comms.json
           git commit -m "Updating JSON message definitions."
           git push origin json
